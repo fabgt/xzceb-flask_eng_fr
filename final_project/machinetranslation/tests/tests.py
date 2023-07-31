@@ -8,7 +8,7 @@ class Test_MachineTranslator(unittest.TestCase):
         translated = english_to_french(input_word)
         self.assertEqual(translated, expected_output)
 
-    def test_english_to_french_fails(self):
+    def test_english_to_french_not_equal(self):
         input_word = 'Bonjour'
         expected_output = 'Hello'
         translated = english_to_french(input_word)
@@ -20,7 +20,7 @@ class Test_MachineTranslator(unittest.TestCase):
         translated = french_to_english(input_word)
         self.assertEqual(translated, expected_output)
     
-    def test_french_to_english_fails(self):
+    def test_french_to_english_not_equal(self):
         input_word = 'Hello'
         expected_output = 'Bonjour'
         translated = french_to_english(input_word)
